@@ -1,0 +1,4 @@
+<resources>
+	<string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">ihma7VrSXmeH3V6THhsZcndc-LxNthWKt1Hdl</string>
+    <string name="app_name">anotherTrail</string>
+</resources>
