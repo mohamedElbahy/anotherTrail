@@ -1,8 +1,9 @@
 import React,{Component}from 'react';
 import { Image, ScrollView, TouchableOpacity, View} from "react-native"
 import axios from "axios";
-import {Card} from "react-native-elements";
+import {Card, Text} from "react-native-elements";
 import {Actions} from 'react-native-router-flux';
+// import codePush from 'react-native-code-push';
 class UsersList extends Component{
 
     state = {users: [],temp:""};
@@ -24,6 +25,7 @@ class UsersList extends Component{
                     <View  style={{alignItems: "center"}}>
                         <Image source={{uri: user.avatar_url}} style={{width: 300, height: 300, borderRadius: 150}}/>
                     </View>
+                    <Text>hello</Text>
                 </Card>
             </TouchableOpacity>
         )

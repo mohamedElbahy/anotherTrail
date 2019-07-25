@@ -7,13 +7,22 @@
  */
 import React, {Component} from 'react';
 import Router from "./Router"
-
+import codePush from 'react-native-code-push';
 class App extends Component {
+    componentDidMount(): void {
+        codePush.sync({
+            updateDialog: true,
+            installMode: codePush.InstallMode.IMMEDIATE
+        });
+    }
+
     render() {
         return (
-        <Router/>
+
+                <Router/>
+
         );
     }
 
 }
-export default App;
+export default  App;
