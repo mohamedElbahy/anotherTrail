@@ -3,7 +3,6 @@ import { Image, ScrollView, TouchableOpacity, View} from "react-native"
 import axios from "axios";
 import {Card} from "react-native-elements";
 import {Actions} from 'react-native-router-flux';
-import codePush from 'react-native-code-push';
 class UsersList extends Component{
 
     state = {users: [],temp:""};
