@@ -21,11 +21,10 @@ class UsersList extends Component{
     renderUsers() {
         return this.state.users.map((user, i) =>
             <TouchableOpacity onPress={()=>this.pressedCard(user)} key={i}>
-                <Card title={user.login}>
+                <Card title={"hello"}>
                     <View  style={{alignItems: "center"}}>
                         <Image source={{uri: user.avatar_url}} style={{width: 300, height: 300, borderRadius: 150}}/>
                     </View>
-                    <Text>hello</Text>
                 </Card>
             </TouchableOpacity>
         )
