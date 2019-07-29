@@ -25,6 +25,7 @@ class UsersList extends Component{
                     <View  style={{alignItems: "center"}}>
                         <Image source={{uri: user.avatar_url}} style={{width: 300, height: 300, borderRadius: 150}}/>
                     </View>
+                    <Text>{user.login}</Text>
                 </Card>
             </TouchableOpacity>
         )
